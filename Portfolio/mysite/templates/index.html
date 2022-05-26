@@ -1,0 +1,298 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{% static 'assets/icons/m.png' %}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{% static 'assets/icons/sanzhar_sapar.png' %}"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Sanzhar Sapar | Web Developer</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>Sanzhar Sapar</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+        <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+      </button>
+    </nav>
+    
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+      <img
+        src="{% static 'assets/images/wfh_1.svg' %}"
+        alt="jane-doe"
+        loading="lazy"
+        class="hero-img"
+      />
+      <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+          
+Hi I
+Backend developer.
+I also have experience with languages ​​like C++(Arduino), C#(net, desktop), C, assembler, Java(mobile), JavaScript(junior React, Jqery), python(Flask, Django, DRF)
+        </p>
+      </div>
+    </section>
+
+    <!-- More about -->
+    <section class="more-about">
+      <h2>More About Me</h2>
+      <p>
+        Education: Gumilyov Enu (2019-2023) with a degree in Computer Science and Software.
+        Place of birth: Kazakhstan city of Petropavlovsk,district Shal-akyn
+        My main skills: Django Framework, Django Rest Framework, Flask Framework, Html, Css
+        Year of birth: November 7, 2002
+        Language skills: Russian (perfect), Kazakh (mother tongue), English (average)
+        Gender: male
+        Nationality:Kazakh
+
+    </section>
+
+    <!-- Skills section -->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="{% static 'assets/icons/icons8-html-5.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'assets/icons/icons8-css3.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'assets/icons/icons8-javascript.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="{% static 'assets/icons/icons8-bootstrap.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'assets/icons/django.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="{% static 'assets/icons/icons8-git.svg' %}"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="projects" id="projects">
+      <h2 class="projects-title">Some of my Recent Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card">
+          <img
+            src="{% static 'assets/images/click.png' %}"
+            alt="expense-tracker"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">Click E-commerce</h3>
+          <p class="project-details">
+            My first online store based on django 3 with my own admin panel and PostgreSQL database
+          </p>
+          <a href="http://clickwebsite.pythonanywhere.com/" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="{% static 'assets/images/Tmart.png' %}"
+            alt="netflic-clone"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">T-mart</h3>
+          <p class="project-details">
+            My second project is also an online store with django 4.0, ajax with the possibility of e-mail confirmation and two admin panels, one for the superadmin and the second for the admins
+          </p>
+          <a href="http://sanzharsapar.pythonanywhere.com/" target="_blank" class="project-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card">
+          <img
+            src="{% static 'assets/images/api.png' %}"
+            alt="greeny-earth"
+            loading="lazy"
+            class="project-pic"
+          />
+          <h3 class="project-title">API-AZYQORGANIC</h3>
+          <p class="project-details">
+            My third project is based on Django 4.0 and Django rest framework with swagger
+          </p>
+          <a href="http://sanzhar.pythonanywhere.com/" target="_blank" class="project-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form  method="POST">
+            <!-- <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="id_first_name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="id_email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="id_context"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            {% csrf_token %}
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            /> -->
+            {% csrf_token %}
+            {{form}}
+            <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            class="submit-btn"
+          />
+          </form>
+        
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="https://t.me/Sanzhar_Sapar" target="_blank"
+        ><img
+          src="{% static 'assets/icons/telegram.gif' %}"
+          alt="Telegram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.instagram.com/__m_i_s_f_i_r_e__/" target="_blank"
+        ><img
+          src="{% static 'assets/icons/icons8-instagram.gif' %}"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://www.linkedin.com/in/%D1%81%D0%B0%D0%BD%D0%B6%D0%B0%D1%80-%D1%81%D0%B0%D0%BF%D0%B0%D1%80-177626231" target="_blank"
+        ><img
+          src="{% static 'assets/icons/icons8-linkedin-circled.gif' %}"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="https://github.com/sanzharsp" target="_blank"
+        ><img src="{% static 'assets/icons/icons8-github.gif' %}" alt="Github" class="socicon"
+      /></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+      ><img
+        src="{% static 'assets/icons/icons8-upward-arrow.gif' %}"
+        class="socicon up-arrow"
+        alt=""
+    /></i>
+
+    <!-- Footer section -->
+    <footer>
+      <p class="copy">&copy; sanzharsapar1@gmail.com</p>
+
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="{% static 'assets/js/app.js' %}"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
