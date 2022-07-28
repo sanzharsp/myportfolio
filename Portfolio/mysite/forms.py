@@ -1,7 +1,14 @@
 from django import forms
 from .models import Costomer 
+from django import forms
+
+
+
+
+    
 
 class Forms(forms.Form):
+
     first_name = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Enter Your Name','class':'input-field'}))
     email = forms.EmailField(widget=forms.TextInput(attrs={'placeholder':"Enter Your email",'class':'input-field'}))
     context = forms.CharField(widget=forms.Textarea(attrs={'placeholder':"Enter Your Message",'class':"input-field"}))

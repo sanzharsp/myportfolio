@@ -12,7 +12,7 @@ class Main(View):
 
     def post(self, request):
         form = Forms(request.POST or None)
-        print(form)
+ 
         if form.is_valid():
  
             Costomer.objects.create(first_name=request.POST['first_name'],email=request.POST['email'],comments=request.POST['context'])
