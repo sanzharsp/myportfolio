@@ -1,9 +1,9 @@
 from django.db import models
 
 class Costomer(models.Model):
-    first_name = models.CharField(max_length=20, verbose_name='Name')
-    email = models.EmailField(max_length=20, verbose_name='email')
-    comments=models.TextField(max_length=255,verbose_name='comments')
+    first_name = models.CharField(max_length=20, verbose_name='Имя')
+    email = models.EmailField(max_length=20, verbose_name='Емайл')
+    comments=models.TextField(max_length=255,verbose_name='Комментарий')
 
     class Meta:
         ordering = ['-id']
